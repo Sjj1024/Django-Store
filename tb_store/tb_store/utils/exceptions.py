@@ -15,9 +15,10 @@ def exception_handler(exc, context):
     :param context: 抛出异常的上下文
     :return: Response响应对象
     """
-    # 调用drf框架原生的异常处理方法
+    # 调用drf框架原生的异常处理方法，如果不是404和视图异常，就返回None,说明是服务器错误
     response = drf_exception_handler(exc, context)
 
+    # 这里只捕获服务器错误
     if response is None:
         view = context['view']
         if isinstance(exc, DatabaseError) or isinstance(exc, RedisError):
