@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Django_Store.iml" afterPath="$PROJECT_DIR$/.idea/Django_Store.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/users/models.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/users/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,58 +19,66 @@
     <SUITE FILE_PATH="coverage/Django_Store$dev.coverage" NAME="dev Coverage Results" MODIFIED="1561898057729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store/tb_store/settings" />
     <SUITE FILE_PATH="coverage/Django_Store$manage.coverage" NAME="manage Coverage Results" MODIFIED="1561898088313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="tb_store" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+            <state relative-caret-position="152">
+              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="187" column="30" lean-forward="true" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
-              <folding>
-                <element signature="e#313#322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="store.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tb_store/logs/store.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="348">
+              <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exceptions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/exceptions.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="95">
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding>
-                <element signature="e#0#75#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/users/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
-              <folding />
+      <file leaf-file-name="tb_users" pinned="false" current-in-tab="false">
+        <entry file="das://table:/9eceb082/de3a00a9-2dbb-460e-a0ff-b9ad10d3682e/tb_store.tb_users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -92,11 +103,19 @@
         <option value="$PROJECT_DIR$/tb_store/tb_store/__init__.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/utils/exceptions.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
+        <option value="$PROJECT_DIR$/tb_store/tb_store/apps/users/models.py" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -125,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,12 +161,6 @@
               <item name="Django_Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_Store" type="462c0819:PsiDirectoryNode" />
               <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django_Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django_Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
               <item name="tb_store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -154,20 +168,39 @@
               <item name="Django_Store" type="462c0819:PsiDirectoryNode" />
               <item name="tb_store" type="462c0819:PsiDirectoryNode" />
               <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_Store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_Store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -347,21 +380,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="24" width="1311" height="627" extended-state="6" />
+    <frame x="53" y="24" width="1309" height="617" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1807419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18577075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33471075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24340771" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54037267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -373,6 +406,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -402,12 +438,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/logs/store.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#75#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/users/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3610">
+          <caret line="190" column="6" lean-forward="false" selection-start-line="190" selection-start-column="6" selection-end-line="190" selection-end-column="6" />
+          <folding>
+            <element signature="e#313#322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/logs/store.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#75#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/users/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3534">
+          <caret line="187" column="30" lean-forward="true" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
+          <folding>
+            <element signature="e#313#322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3002">
           <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
-            <element signature="e#313#322#0" expanded="true" />
+            <element signature="e#313#322#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -416,7 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
           <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,7 +556,7 @@
         <state relative-caret-position="228">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
           <folding>
-            <element signature="e#0#75#0" expanded="true" />
+            <element signature="e#0#75#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -461,14 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -480,16 +595,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
           <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="228">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
           <folding>
-            <element signature="e#0#75#0" expanded="true" />
+            <element signature="e#0#75#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -502,12 +616,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/slide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/user_center_site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <marker date="1524765436000" expanded="true" signature="17:9758" ph="{&quot;el&quot;: '##app'...}" />
+            <marker date="1524765436000" expanded="true" signature="45:903" ph="{&quot;host&quot;: host...}" />
+            <marker date="1524765436000" expanded="true" signature="450:661" ph="{&quot;receiver&quot;: ''...}" />
+            <marker date="1524765436000" expanded="true" signature="928:1989" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="971:1023" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="1055:1077" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="1148:1177" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="1273:1428" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="1300:1376" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="1460:1482" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="1689:1737" ph="{&quot;status&quot;: status...}" />
+            <marker date="1524765436000" expanded="true" signature="1791:1888" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="1894:1968" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2002:3123" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2050:2563" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2099:2553" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2187:2255" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="2295:2325" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2414:2447" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2607:3117" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2651:3107" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2735:2803" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="2843:2873" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="2965:2998" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="3138:9756" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="3180:3304" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="3342:3509" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="3559:4042" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4098:4367" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4403:4585" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4450:4509" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4515:4575" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4618:4791" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4662:4718" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4724:4781" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4825:5049" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4918:4976" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="4982:5039" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5082:5418" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5125:5408" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5259:5324" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5330:5394" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5468:7310" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5667:5716" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5722:7300" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="5842:6592" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="6029:6224" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="6064:6156" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="6264:6294" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="6460:6497" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="6598:7286" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="6732:6927" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="6767:6859" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="6967:7036" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="7186:7219" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="7364:7911" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="7478:7653" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="7509:7593" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="7689:7747" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="7827:7856" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="7967:8509" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8089:8264" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="8120:8204" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8300:8326" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8425:8454" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8569:8784" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8670:8732" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8840:9646" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8877:8929" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="8935:9636" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="9056:9127" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="9129:9319" ph="{&quot;responseType&quot;: 'json'...}" />
+            <marker date="1524765436000" expanded="true" signature="9164:9251" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="9359:9389" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="9540:9573" ph="{...}" />
+            <marker date="1524765436000" expanded="true" signature="9703:9750" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/django_store/lib/python3.5/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="344" column="23" lean-forward="true" selection-start-line="344" selection-start-column="23" selection-end-line="344" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1d931d05-00ea-4f21-a4db-0b4ca9007455/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/34dc239f-9b08-44d9-a487-70adbeb78dca/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="187" column="30" lean-forward="true" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
+        <state relative-caret-position="348">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9eceb082/de3a00a9-2dbb-460e-a0ff-b9ad10d3682e/tb_store.tb_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/de3a00a9-2dbb-460e-a0ff-b9ad10d3682e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
-            <element signature="e#313#322#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
