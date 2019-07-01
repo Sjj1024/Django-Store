@@ -1,0 +1,1 @@
+var host = 'http://api.store.site:8000'
