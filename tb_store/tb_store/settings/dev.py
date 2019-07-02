@@ -215,7 +215,7 @@ AUTH_USER_MODEL = 'users.User'
 CORS_ORIGIN_WHITELIST = (
     '127.0.0.1:8080',
     'localhost:8080',
-    'www.meiduo.site:8080',
-    'api.meiduo.site:8000'
+    'www.store.site:8080',
+    'api.store.site:8080',
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
