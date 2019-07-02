@@ -11,6 +11,7 @@ from tb_store.libs.captcha.captcha import captcha
 from tb_store.utils.yuntongxun.sms import CCP
 
 from verifications import constants, serializers
+from celery_tasks.sms.tasks import send_sms_code
 
 
 # Create your views here.
@@ -55,16 +56,20 @@ class SMSCodeView(GenericAPIView):
         pl.execute()
 
         # 发送短信验证码
-        try:
-            sms_code_expires = str(constants.SMS_CODE_REDIS_EXPIRES // 60)
-            ccp = CCP()
-            result = ccp.send_template_sms(mobile, [sms_code, sms_code_expires], constants.SMS_CODE_TEMP_ID)
-        except Exception as e:
-            logger.info("发送验证码异常mobile:%s, message:%s" % (mobile, e), status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        else:
-            if result == 0:
-                logger.info("发送验证码短信正常mobile:%s" % mobile)
-                return Response({"message": "OK"})
-            else:
-                logger.warning("发送短信验证码失败mobile:%s" % mobile)
-                return Response({"message": "failed"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # try:
+        #     sms_code_expires = str(constants.SMS_CODE_REDIS_EXPIRES // 60)
+        #     ccp = CCP()
+        #     result = ccp.send_template_sms(mobile, [sms_code, sms_code_expires], constants.SMS_CODE_TEMP_ID)
+        # except Exception as e:
+        #     logger.info("发送验证码异常mobile:%s, message:%s" % (mobile, e), status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # else:
+        #     if result == 0:
+        #         logger.info("发送验证码短信正常mobile:%s" % mobile)
+        #         return Response({"message": "OK"})
+        #     else:
+        #         logger.warning("发送短信验证码失败mobile:%s" % mobile)
+        #         return Response({"message": "failed"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        # 使用celery队列发送短信验证码
+        sms_code_expires = str(constants.SMS_CODE_REDIS_EXPIRES // 60)
+        send_sms_code.delay(mobile, sms_code, sms_code_expires)
+        return Response({"message": "OK"})
