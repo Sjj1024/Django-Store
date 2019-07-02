@@ -1,5 +1,7 @@
 #!/usr/bin/env python
+# 启动redis和celery
 # sudo redis-server /etc/redis/redis.conf
+# celery -A celery_tasks.main worker -l info
 import os
 import sys
 
