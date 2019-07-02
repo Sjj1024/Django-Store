@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # 'tb_store.apps.users.apps.UsersConfig',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'tb_store.urls'
@@ -184,7 +186,7 @@ LOGGING = {
     },
     'handlers': {  # 日志处理方法
         'console': {  # 向终端中输出日志
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
@@ -208,3 +210,12 @@ LOGGING = {
 }
 
 AUTH_USER_MODEL = 'users.User'
+
+# CORS
+CORS_ORIGIN_WHITELIST = (
+    '127.0.0.1:8080',
+    'localhost:8080',
+    'www.store.site:8080',
+    'api.store.site:8080',
+)
+CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie

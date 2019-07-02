@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# sudo redis-server /etc/redis/redis.conf
 import os
 import sys
 
