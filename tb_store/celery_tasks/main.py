@@ -1,10 +1,5 @@
 from celery import Celery
 
-# import os
-# if not os.getenv('DJANGO_SETTINGS_MODULE'):
-#     os.environ['DJANGO_SETTINGS_MODULE'] = 'tb_store.setting.dev'
-
-
 # 创建celery对象
 celery_app = Celery("store")
 
