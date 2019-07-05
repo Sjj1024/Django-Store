@@ -18,6 +18,7 @@ class UserView(CreateAPIView):
     serializer_class = serializers.CreateUserSerializer
 
 
+
 class UsernameCountView(APIView):
     """
     用户名数量

@@ -72,4 +72,5 @@ class SMSCodeView(GenericAPIView):
         # 使用celery队列发送短信验证码
         sms_code_expires = str(constants.SMS_CODE_REDIS_EXPIRES // 60)
         send_sms_code.delay(mobile, sms_code, sms_code_expires)
+        print(sms_code)
         return Response({"message": "OK"})
