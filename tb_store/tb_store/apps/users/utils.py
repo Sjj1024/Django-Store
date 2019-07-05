@@ -24,11 +24,13 @@ def get_user_by_account(account):
     :return:
     """
     try:
-        if re.match('', account):
+        if re.match('^1[3-9]\d{9}$', account):
             # 用户名是手机号
+            print(account)
             user = User.objects.get(mobile=account)
         else:
             #　账号是用户名
+            print(account)
             user = User.objects.get(username=account)
     except User.DoesNotExist:
         return None
@@ -41,5 +43,6 @@ class UsernameMobileAuthBackend(ModelBackend):
     """
     def authenticate(self, request, username=None, password=None, **kwargs):
         user = get_user_by_account(username)
+        print(username, password)
         if user is not None and user.check_password(password):
             return user
