@@ -1,1 +1,1 @@
-var host = 'http://api.store.site:8000'
+var host = 'http://api.store.site:8000';
