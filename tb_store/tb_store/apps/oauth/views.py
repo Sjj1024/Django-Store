@@ -4,8 +4,8 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
-from rest_framework.settings import api_settings
 from rest_framework.views import APIView
+from rest_framework_jwt.settings import api_settings
 
 from oauth.exceptions import OAuthQQAPIError
 from oauth.models import OAuthQQUser
