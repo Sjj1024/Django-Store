@@ -9,6 +9,7 @@ from rest_framework.views import APIView
 
 from oauth.exceptions import OAuthQQAPIError
 from oauth.models import OAuthQQUser
+from oauth.serializers import OAuthQQUserSerializer
 from oauth.utils import OAuthQQ
 
 
@@ -33,6 +34,7 @@ class QQAuthUserView(CreateAPIView):
     """
     用与ｑｑ登录的用户:?code=XXX
     """
+    serializer_class = OAuthQQUserSerializer
 
     def get(self, request):
         # 获取ｃｏｄｅ
@@ -71,3 +73,5 @@ class QQAuthUserView(CreateAPIView):
                 'username': user.username
             })
             return response
+
+
