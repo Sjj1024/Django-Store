@@ -1,0 +1,2 @@
+#  绑定用户的有效期
+SAVE_QQ_USER_TOKEN_EXPIRES = 10 * 60

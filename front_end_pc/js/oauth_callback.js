@@ -25,7 +25,32 @@ var vm = new Vue({
         access_token: ''
     },
     mounted: function(){
-
+        // 从路径中获取qq重定向返回的code
+        var code = this.get_query_string('code');
+        axios.get(this.host + '/oauth/qq/user/?code=' + code, {
+                responseType: 'json',
+            })
+            .then(response => {
+                if (response.data.id){
+                    // 用户已绑定
+                    sessionStorage.clear();
+                    localStorage.clear();
+                    localStorage.user_id = response.data.id;
+                    localStorage.username = response.data.username;
+                    localStorage.token = response.data.token;
+                    var state = this.get_query_string('state');
+                    location.href = state;
+                } else {
+                    // 用户未绑定
+                    this.access_token = response.data.access_token;
+                    this.generate_image_code();
+                    this.is_show_waiting = false;
+                }
+            })
+            .catch(error => {
+                console.log(error.response.data);
+                alert('服务器异常');
+            })
     },
     methods: {
         // 获取url路径参数
