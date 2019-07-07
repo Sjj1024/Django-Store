@@ -3,6 +3,7 @@ import re
 from django_redis import get_redis_connection
 from rest_framework import serializers
 
+from celery_tasks.email.tasks import send_verify_email
 from users.models import User
 
 
@@ -122,6 +123,14 @@ class EmailSerializer(serializers.ModelSerializer):
         }
 
     def update(self, instance, validated_data):
-        instance.email = validated_data["email"]
+        email = validated_data["email"]
+        instance.email = email
         instance.save()
+
+        #　生成验证了链接
+        verify_url = instance.generate_verify_email_url()
+
+        # 发送验证邮件
+        send_verify_email.delay(email, verify_url)
+
         return instance
