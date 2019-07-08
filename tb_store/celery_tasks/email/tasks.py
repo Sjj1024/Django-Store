@@ -13,6 +13,6 @@ def send_verify_email(to_email, verify_url):
     html_message = '<p>尊敬的用户您好！</p>' \
                    '<p>感谢您使用淘宝商城。</p>' \
                    '<p>您的邮箱为：%s 。请点击此链接激活您的邮箱：</p>' \
-                   '<p><a href="%s">%s<a></p>' % (to_email, verify_url, verify_url)
+                   '<p><a href="%s">请点击链接以确认</a></p>' % (to_email, verify_url)
     send_mail(subject, "", settings.EMAIL_FROM, [to_email], html_message=html_message)
     print("邮箱发送成功")

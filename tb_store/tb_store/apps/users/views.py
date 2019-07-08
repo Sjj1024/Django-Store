@@ -20,7 +20,7 @@ class VerifyEmailView(APIView):
     """
     def get(self, request):
         # 获取token
-        token = request.query._parms.get("token")
+        token = request.query_params.get("token")
         if not token:
             return Response({'message': '缺少token'}, status=status.HTTP_400_BAD_REQUEST)
 
