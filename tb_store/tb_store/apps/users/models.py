@@ -31,3 +31,14 @@ class User(AbstractUser):
         token = serializer.dumps(data).decode()
         verify_url = 'http://www.meiduo.site:8080/success_verify_email.html?token=' + token
         return verify_url
+
+    @staticmethod
+    def check_verify_email_token(self, token):
+        """
+        检查验证邮件的token
+        :return:
+        """
+        serializer = TJWSSerializer(settings.SECRET_KEY, expires_in=constants.VERIFY_EMAIL_TOKEN_EXPIRES)
+        # try:
+        #     data = serializer.loads(token)
+        #
