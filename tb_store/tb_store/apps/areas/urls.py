@@ -8,8 +8,7 @@ urlpatterns = [
 ]
 
 router = DefaultRouter()
-
-router.register(r"areas", views.AreasViewSet, base_name="areas")
+router.register(r'areas', views.AreasViewSet, base_name='areas')
 
 urlpatterns += router.urls
 

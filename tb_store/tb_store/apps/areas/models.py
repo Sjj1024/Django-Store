@@ -2,6 +2,9 @@ from django.db import models
 
 
 # Create your models here.
+from tb_store.utils.models import BaseModel
+from users.models import User
+
 
 class Area(models.Model):
     """
@@ -18,4 +21,3 @@ class Area(models.Model):
 
     def __str__(self):
         return self.name
-

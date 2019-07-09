@@ -16,7 +16,7 @@ class SubAreaSerializer(serializers.ModelSerializer):
     """
     子行政规划信息序列化器
     """
-    subs = AreaSerializer(many=True,read_only=True)
+    subs = AreaSerializer(many=True, read_only=True)
 
     class Meta:
         model = Area
