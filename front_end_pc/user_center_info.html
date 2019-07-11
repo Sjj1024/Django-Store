@@ -89,57 +89,16 @@
                 <h3 class="common_title2">最近浏览</h3>
                 <div class="has_view_list">
                     <ul class="goods_type_list clearfix">
-                <li>
-                    <a href="detail.html"><img src="images/goods/goods003.jpg"></a>
-                    <h4><a href="detail.html">360手机 N6 Pro 全网通</a></h4>
-                    <div class="operate">
-                        <span class="prize">￥2699.00</span>
-                        <span class="unit">台</span>
-                        <a href="#" class="add_goods" title="加入购物车"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#"><img src="images/goods/goods004.jpg"></a>
-                    <h4><a href="#">360手机 N6 Pro 全网通</a></h4>
-                    <div class="operate">
-                        <span class="prize">￥2699.00</span>
-                        <span class="unit">台</span>
-                        <a href="#" class="add_goods" title="加入购物车"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#"><img src="images/goods/goods005.jpg"></a>
-                    <h4><a href="#">360手机 N6 Pro 全网通</a></h4>
-                    <div class="operate">
-                        <span class="prize">￥2699.00</span>
-                        <span class="unit">台</span>
-                        <a href="#" class="add_goods" title="加入购物车"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#"><img src="images/goods/goods006.jpg"></a>
-                    <h4><a href="#">360手机 N6 Pro 全网通</a></h4>
-                    <div class="operate">
-                        <span class="prize">￥2699.00</span>
-                        <span class="unit">台</span>
-                        <a href="#" class="add_goods" title="加入购物车"></a>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#"><img src="images/goods/goods007.jpg"></a>
-                    <h4><a href="#">急速路由</a></h4>
-                    <div class="operate">
-                        <span class="prize">￥64.5</span>
-                        <span class="unit">6.45/500g</span>
-                        <a href="#" class="add_goods" title="加入购物车"></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                        <li v-for="sku in histories">
+                        <a :href="sku.url"><img :src="sku.default_image_url"></a>
+                        <h4><a :href="sku.url">{{sku.name}}</a></h4>
+                        <div class="operate">
+                            <span class="prize">￥{{sku.price}}</span>
+                            <span class="unit">{{sku.comments}}评价</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
     </div>
     <div class="footer">

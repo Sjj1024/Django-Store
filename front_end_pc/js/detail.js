@@ -36,7 +36,15 @@ var vm = new Vue({
     mounted: function(){
         // 添加用户浏览历史记录
         this.get_sku_id();
-
+        if (this.user_id) {
+            axios.post(this.host+'/browse_histories/', {
+                sku_id: this.sku_id
+            }, {
+                headers: {
+                    'Authorization': 'JWT ' + this.token
+                }
+            })
+        }
         this.get_cart();
         this.get_hot_goods();
         this.get_comments();
