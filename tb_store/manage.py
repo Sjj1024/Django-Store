@@ -2,6 +2,8 @@
 # 启动redis和celery
 # redis-server /etc/redis/redis.conf
 # celery -A celery_tasks.main worker -l info
+# docker run -dti --network=host --name tracker -v /var/fdfs/tracker:/var/fdfs delron/fastdfs tracker
+# docker run -dti --network=host --name storage -e TRACKER_SERVER=192.168.11.116:22122 -v /var/fdfs/storage:/var/fdfs delron/fastdfs storage
 import os
 import sys
 
