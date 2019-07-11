@@ -32,7 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'www.store.site', 'api.store.site', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -87,7 +86,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tb_store.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -101,7 +99,6 @@ DATABASES = {
         'NAME': 'tb_store'  # 数据库名字
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -121,7 +118,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -134,7 +130,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -257,13 +252,12 @@ QQ_STATE = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
-#发送邮件的邮箱
+# 发送邮件的邮箱
 EMAIL_HOST_USER = '15670339118@163.com'
-#在邮箱中设置的客户端授权密码
+# 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = '521songjiang'
-#收件人看到的发件人
+# 收件人看到的发件人
 EMAIL_FROM = '淘宝商城<15670339118@163.com>'
-
 
 # DRF扩展
 REST_FRAMEWORK_EXTENSIONS = {
@@ -292,3 +286,13 @@ CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所�
 
 # 生成的静态html文件保存目录
 GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
+
+# 定时任务
+CRONJOBS = [
+    # 每5分钟执行一次生成主页静态文件
+    (
+    '*/1 * * * *', 'contents.crons.generate_static_index_html', '>> /home/python/Desktop/Django-Store/tb_store/logs/crontab.log')
+]
+
+# 解决crontab中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
