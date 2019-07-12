@@ -210,8 +210,36 @@ class AddUserBrowsingHistorySerializer(serializers.Serializer):
         # 添加新的浏览记录
         pl.lpush("history_%s" % user_id, sku_id)
         # 只保存最多5条记录
-        pl.ltrim("history_%s" % user_id, 0, constants.USER_BROWSING_HISTORY_COUNTS_LIMIT-1)
+        pl.ltrim("history_%s" % user_id, 0, constants.USER_BROWSING_HISTORY_COUNTS_LIMIT - 1)
 
         pl.execute()
 
         return validated_data
+
+
+class PasswordSerializer(serializers.ModelSerializer):
+    """
+    用户密码修改序列化器类
+    """
+
+    class Meta:
+        model = User
+        fields = ("id", "email")
+        extra_kwargs = {
+            "email": {
+                "required": True
+            }
+        }
+
+    def update(self, instance, validated_data):
+        email = validated_data["email"]
+        instance.email = email
+        instance.save()
+
+        # 　生成验证了链接
+        verify_url = instance.generate_verify_email_url()
+
+        # 发送验证邮件
+        send_verify_email.delay(email, verify_url)
+
+        return instance

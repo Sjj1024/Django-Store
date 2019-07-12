@@ -5,10 +5,14 @@
 	<title>美多商城-用户中心</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/host.js"></script>
+    <script type="text/javascript" src="js/vue-2.5.16.js"></script>
+    <script type="text/javascript" src="js/axios-0.18.0.min.js"></script>
 </head>
 <body>
+	<div id="app" v-cloak>
 	<div class="header_con">
-        <div class="header">
+        <div class="header" id="app1">
             <div class="welcome fl">欢迎来到美多商城!</div>
             <div class="fr">
                 <div class="login_btn fl">
@@ -50,19 +54,22 @@
 		<div class="right_content clearfix">
 				<div class="info_con clearfix">
 				<h3 class="common_title2">修改密码</h3>
-				<div class="site_con pass_change_con">			
-                    <form>
+				<div class="site_con pass_change_con">
+                    <form id="pass-form" @submit.prevent="on_submit">
                         <div class="form_group">
                             <label>当前密码：</label>
-                            <input type="password" name="">
+                            <input type="password" v-model="ipassword" name="ipwd" id="ipwd">
+                        	<span v-show="error_ipassword" class="error_tip">原密码不正确，请重新输入</span>
                         </div>
                         <div class="form_group">
                             <label>新密码：</label>
-                            <input type="password" name="">
+                            <input type="password" v-model="password" @blur="check_pwd" name="pwd" id="pwd">
+                        	<span v-show="error_password" class="error_tip">密码最少8位，最长20位</span>
                         </div>
                         <div class="form_group">
                             <label>确认新密码：</label>
-                            <input type="password" name="">
+                            <input type="password" v-model="password2" @blur="check_cpwd" name="cpwd" id="cpwd">
+                        	<span v-show="error_check_password" class="error_tip">两次输入的密码不一致</span>
                         </div>
                         <input type="submit" name="" value="确 定" class="info_submit">
                     </form>

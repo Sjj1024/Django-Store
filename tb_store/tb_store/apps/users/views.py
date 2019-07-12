@@ -99,6 +99,7 @@ class VerifyEmailView(APIView):
     """
     邮箱验证
     """
+
     def get(self, request):
         # 获取token
         token = request.query_params.get("token")
@@ -208,3 +209,17 @@ class UserBrowsingHistoryView(CreateAPIView):
 
         s = SKUSerializer(skus, many=True)
         return Response(s.data)
+
+
+class PassWord(UpdateAPIView):
+    """
+    修改用户密码视图，请求接收：POST，ipassword，password，password2，
+    效验原始密码ipassword正确否，
+    正确的话效验新密码的正确性，返回ok，不正确返回error，
+    """
+    permission_classes = [IsAuthenticated]
+    serializer_class = serializers.EmailSerializer
+
+    def get_object(self, *args, **kwargs):
+        return self.request.user
+
