@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'goods.apps.GoodsConfig',
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
-    'django_crontab',
+    'django_crontab'
 ]
 
 MIDDLEWARE = [
@@ -180,6 +180,8 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+    # 添加分页类
+    'DEFAULT_PAGINATION_CLASS': "tb_store.utils.pagination.StandardResultsSetPagination"
     # 添加用户认证机制
     # 'DEFAULT_PERMISSION_CLASSES': (
     #     'rest_framework.permissions.IsAuthenticated',
@@ -303,3 +305,4 @@ CRONJOBS = [
 
 # 解决crontab中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
