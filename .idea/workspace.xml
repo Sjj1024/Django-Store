@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front_end_pc/js/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front_end_pc/search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/carts/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +25,7 @@
     <SUITE FILE_PATH="coverage/Django_Store$regenerate_index_html.coverage" NAME="regenerate_index_html Coverage Results" MODIFIED="1562844669311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store/scripts" />
     <SUITE FILE_PATH="coverage/Django_Store$regenerate_detail_html.coverage" NAME="regenerate_detail_html Coverage Results" MODIFIED="1562848212446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store/scripts" />
     <SUITE FILE_PATH="coverage/Django_Store$spider_test.coverage" NAME="spider_test Coverage Results" MODIFIED="1562759342066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Django_Store$manage.coverage" NAME="manage Coverage Results" MODIFIED="1563017073578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store" />
+    <SUITE FILE_PATH="coverage/Django_Store$manage.coverage" NAME="manage Coverage Results" MODIFIED="1563017337425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store" />
     <SUITE FILE_PATH="coverage/Django_Store$tasks.coverage" NAME="tasks Coverage Results" MODIFIED="1562846697419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tb_store/celery_tasks/html" />
   </component>
   <component name="DatabaseView">
@@ -51,8 +57,8 @@
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="361">
+              <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#363#372#0" expanded="true" />
               </folding>
@@ -60,44 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front_end_pc/js/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front_end_pc/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="317" column="7" lean-forward="false" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
-              <folding>
-                <element signature="e#3774#3778#0" expanded="true" />
-                <element signature="e#4262#4266#0" expanded="true" />
-                <element signature="e#5362#5366#0" expanded="true" />
-                <element signature="e#6391#6395#0" expanded="true" />
-                <element signature="e#7420#7424#0" expanded="true" />
-                <element signature="e#8041#8045#0" expanded="true" />
-                <element signature="e#8644#8648#0" expanded="true" />
-                <element signature="e#9251#9255#0" expanded="true" />
-                <element signature="e#9842#9846#0" expanded="true" />
-                <element signature="e#10465#10469#0" expanded="true" />
-                <element signature="e#11069#11073#0" expanded="true" />
-                <element signature="e#11690#11694#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="244" column="26" lean-forward="true" selection-start-line="244" selection-start-column="26" selection-end-line="244" selection-end-column="26" />
+            <state relative-caret-position="183">
+              <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+              <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -228,9 +201,9 @@
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/serializers.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" />
-        <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
         <option value="$PROJECT_DIR$/front_end_pc/search.html" />
         <option value="$PROJECT_DIR$/front_end_pc/js/search.js" />
+        <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
       </list>
     </option>
   </component>
@@ -283,13 +256,28 @@
             <path>
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -751,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563017184161</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="添加前段搜索页面">
+      <created>1563017316742</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563017316742</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -773,9 +768,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44846576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286004" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48210526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35448918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5368421" sideWeight="0.49095201" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39318886" sideWeight="0.49095201" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1660079" sideWeight="0.5084746" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32043344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -848,7 +843,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="成功发送短信验证码" />
     <MESSAGE value="使用celery队列完成短信验证码发送" />
     <MESSAGE value="使用celery队列完成发送短信验证码优化结构" />
     <MESSAGE value="添加JWT token验证机制来记录用户状态" />
@@ -873,7 +867,8 @@
     <MESSAGE value="商品详情页静态化处理和首页商品列表显示" />
     <MESSAGE value="添加用户修改密码功能" />
     <MESSAGE value="完成后端ES搜索引擎安装和搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成后端ES搜索引擎安装和搭建" />
+    <MESSAGE value="添加前段搜索页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加前段搜索页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1210,7 +1205,7 @@
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -1221,14 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="244" column="26" lean-forward="true" selection-start-line="244" selection-start-column="26" selection-end-line="244" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1254,20 +1241,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="361">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#363#372#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front_end_pc/js/search.js">
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="183">
+          <caret line="313" column="0" lean-forward="true" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
           <folding />
         </state>
       </provider>

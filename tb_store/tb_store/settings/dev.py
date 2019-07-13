@@ -166,6 +166,13 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
+    },
+    "cart": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1/4",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
     }
 
 }
@@ -233,7 +240,7 @@ LOGGING = {
             'propagate': True,  # 是否继续传递日志信息
             'level': 'DEBUG',  # 日志器接收的最低日志级别
         },
-    }
+    },
 }
 
 AUTH_USER_MODEL = 'users.User'
