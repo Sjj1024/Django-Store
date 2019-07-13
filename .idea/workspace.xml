@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/search_indexes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/templates/search/indexes/goods/sku_text.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front_end_pc/js/search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front_end_pc/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/manage.py" afterPath="$PROJECT_DIR$/tb_store/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/serializers.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/users/serializers.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/users/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,13 +48,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="e#363#372#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/js/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="317" column="7" lean-forward="false" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
+              <folding>
+                <element signature="e#3774#3778#0" expanded="true" />
+                <element signature="e#4262#4266#0" expanded="true" />
+                <element signature="e#5362#5366#0" expanded="true" />
+                <element signature="e#6391#6395#0" expanded="true" />
+                <element signature="e#7420#7424#0" expanded="true" />
+                <element signature="e#8041#8045#0" expanded="true" />
+                <element signature="e#8644#8648#0" expanded="true" />
+                <element signature="e#9251#9255#0" expanded="true" />
+                <element signature="e#9842#9846#0" expanded="true" />
+                <element signature="e#10465#10469#0" expanded="true" />
+                <element signature="e#11069#11073#0" expanded="true" />
+                <element signature="e#11690#11694#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,9 +142,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -153,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tb_store/tb_store/apps/oauth/models.py" />
-        <option value="$PROJECT_DIR$/tb_store/scripts/import_areas+data_to_db.sh" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/urls.py" />
         <option value="$PROJECT_DIR$/front_end_pc/user_center_site.html" />
         <option value="$PROJECT_DIR$/front_end_pc/success_verify_email.html" />
@@ -204,6 +229,8 @@
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
+        <option value="$PROJECT_DIR$/front_end_pc/search.html" />
+        <option value="$PROJECT_DIR$/front_end_pc/js/search.js" />
       </list>
     </option>
   </component>
@@ -257,6 +284,12 @@
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
               <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -711,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562942306375</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="完成后端ES搜索引擎安装和搭建">
+      <created>1563017184161</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1563017184161</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -808,7 +848,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加短信验证码借口" />
     <MESSAGE value="成功发送短信验证码" />
     <MESSAGE value="使用celery队列完成短信验证码发送" />
     <MESSAGE value="使用celery队列完成发送短信验证码优化结构" />
@@ -833,7 +872,8 @@
     <MESSAGE value="添加用户浏览商品历史记录" />
     <MESSAGE value="商品详情页静态化处理和首页商品列表显示" />
     <MESSAGE value="添加用户修改密码功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加用户修改密码功能" />
+    <MESSAGE value="完成后端ES搜索引擎安装和搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成后端ES搜索引擎安装和搭建" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -842,20 +882,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.virtualenvs/django_store/lib/python3.5/site-packages/django/core/files/storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/django_store/lib/python3.5/site-packages/fdfs_client/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="133" column="42" lean-forward="true" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/fastdfs/fdfs_storage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -1064,6 +1090,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,6 +1135,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-820">
           <caret line="298" column="6" lean-forward="false" selection-start-line="298" selection-start-column="6" selection-end-line="298" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +1176,7 @@
         <state relative-caret-position="266">
           <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1205,6 +1233,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="317" column="7" lean-forward="false" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
+          <folding>
+            <element signature="e#3774#3778#0" expanded="true" />
+            <element signature="e#4262#4266#0" expanded="true" />
+            <element signature="e#5362#5366#0" expanded="true" />
+            <element signature="e#6391#6395#0" expanded="true" />
+            <element signature="e#7420#7424#0" expanded="true" />
+            <element signature="e#8041#8045#0" expanded="true" />
+            <element signature="e#8644#8648#0" expanded="true" />
+            <element signature="e#9251#9255#0" expanded="true" />
+            <element signature="e#9842#9846#0" expanded="true" />
+            <element signature="e#10465#10469#0" expanded="true" />
+            <element signature="e#11069#11073#0" expanded="true" />
+            <element signature="e#11690#11694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1212,6 +1261,14 @@
           <folding>
             <element signature="e#363#372#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
