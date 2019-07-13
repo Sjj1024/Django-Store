@@ -221,17 +221,67 @@ class PasswordSerializer(serializers.ModelSerializer):
     """
     用户密码修改序列化器类
     """
+    # 额外增加的字段选项
+    ipassword = serializers.CharField(label='原始密码', write_only=True)
+    password2 = serializers.CharField(label='确认密码', write_only=True)
 
     class Meta:
         model = User
-        fields = ("id", "email")
+        fields = ("id", "password", "password2")
         extra_kwargs = {
-            "email": {
-                "required": True
-            }
+            'ipassword': {
+                'write_only': True,
+                'min_length': 8,
+                'max_length': 20,
+                'error_messages': {
+                    'min_length': '仅允许8-20个字符的密码',
+                    'max_length': '仅允许8-20个字符的密码',
+                }
+            },
+            'password': {
+                'write_only': True,
+                'min_length': 8,
+                'max_length': 20,
+                'error_messages': {
+                    'min_length': '仅允许8-20个字符的密码',
+                    'max_length': '仅允许8-20个字符的密码',
+                }
+            },
         }
 
+    # 判断原始密码和新的两个密码是否正确
+    def validate(self, data):
+        # 判断两次密码
+        if data['password'] != data['password2']:
+            raise serializers.ValidationError('两次密码不一致')
+
+        # 判断短信验证码
+        # redis_conn = get_redis_connection('verify_codes')
+        # mobile = data['mobile']
+        # real_sms_code = redis_conn.get('sms_%s' % mobile)
+        # if real_sms_code is None:
+        #     raise serializers.ValidationError('无效的短信验证码')
+        # if data['sms_code'] != real_sms_code.decode():
+        #     raise serializers.ValidationError('短信验证码错误')
+
+        return data
+
     def update(self, instance, validated_data):
+        """
+        创建用户
+        """
+        # 移除数据库模型类中不存在的属性
+        del validated_data['password2']
+        del validated_data['sms_code']
+        del validated_data['allow']
+
+        # user= User.objects.create(**validated_data)
+        user = super().create(validated_data)
+
+        # 调用django的认证系统加密密码
+        user.set_password(validated_data['password'])
+        user.save()
+
         email = validated_data["email"]
         instance.email = email
         instance.save()

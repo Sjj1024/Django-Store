@@ -1,10 +1,11 @@
 from django.shortcuts import render
+from drf_haystack.viewsets import HaystackViewSet
 from rest_framework.filters import OrderingFilter
 # Create your views here.
 from rest_framework.generics import ListAPIView
 
 from goods.models import SKU
-from goods.serializers import SKUSerializer
+from goods.serializers import SKUSerializer, SKUIndexSerializer
 
 
 class SKUListView(ListAPIView):
@@ -18,3 +19,11 @@ class SKUListView(ListAPIView):
     def get_queryset(self):
         category_id = self.kwargs["category_id"]
         return SKU.objects.filter(category_id=category_id, is_launched=True)
+
+
+class SKUSearchViewSet(HaystackViewSet):
+    """
+    SKU搜索
+    """
+    index_models = [SKU]
+    serializer_class = SKUIndexSerializer
