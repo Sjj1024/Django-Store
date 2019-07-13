@@ -79,7 +79,28 @@ var vm = new Vue({
         },
         // 添加购物车
         add_cart: function(){
-
+            axios.post(this.host+'/cart/', {
+                    sku_id: parseInt(this.sku_id),
+                    count: this.sku_count
+                }, {
+                    headers: {
+                        'Authorization': 'JWT ' + this.token
+                    },
+                    responseType: 'json',
+                    withCredentials: true
+                })
+                .then(response => {
+                    alert('添加购物车成功');
+                    this.cart_total_count += response.data.count;
+                })
+                .catch(error => {
+                    if ('non_field_errors' in error.response.data) {
+                        alert(error.response.data.non_field_errors[0]);
+                    } else {
+                        alert('添加购物车失败');
+                    }
+                    console.log(error.response.data);
+                })
         },
         // 获取购物车数据
         get_cart: function(){
