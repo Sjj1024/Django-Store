@@ -211,15 +211,50 @@ class UserBrowsingHistoryView(CreateAPIView):
         return Response(s.data)
 
 
-class PassWord(UpdateAPIView):
+class PassWord(APIView):
     """
     修改用户密码视图，请求接收：POST，ipassword，password，password2，
     效验原始密码ipassword正确否，
     正确的话效验新密码的正确性，返回ok，不正确返回error，
     """
-    permission_classes = [IsAuthenticated]
-    serializer_class = serializers.EmailSerializer
 
-    def get_object(self, *args, **kwargs):
-        return self.request.user
+    def put(self, request):
+        # 获取参数
+        ipassword = request.data["ipassword"]
+        password = request.data["password"]
+        password2 = request.data["password2"]
+        user_id = request.data["user_id"]
+        # 获得请求用户
+        user = User.objects.get(id=user_id)
+        # 效验新密码是否符合要求
+        if password != password2:
+            raise Exception("两次密码输入不一致！")
+        if len(password) > 20 or len(password) < 8:
+            raise Exception("密码长度需要8到20位")
+        # 检查原始密码是否正确
+        user.check_password(ipassword)
 
+        # 修改密码为新密码
+        user.set_password(password)
+        user.save()
+
+        # 返回数据
+        return Response(status=status.HTTP_202_ACCEPTED)
+
+
+        # print(user)  # python
+        # user = request.user
+        # print(user)
+
+        # user.set_password(request.data["password"])
+        # permission_classes = [IsAuthenticated]
+        # serializer_class = serializers.PasswordSerializer
+        #
+        # def get_object(self, *args, **kwargs):
+        #     return self.request.user
+
+        # def post(self, request):
+        #     print(request.data["ipassword"])
+        #     print(request.data["password"])
+        #     print(request.data["password2"])
+        #     return Response("ok")

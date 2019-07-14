@@ -227,7 +227,7 @@ class PasswordSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ("id", "password", "password2")
+        fields = ("id", "ipassword", "password", "password2")
         extra_kwargs = {
             'ipassword': {
                 'write_only': True,
@@ -238,7 +238,7 @@ class PasswordSerializer(serializers.ModelSerializer):
                     'max_length': '仅允许8-20个字符的密码',
                 }
             },
-            'password': {
+            'password2': {
                 'write_only': True,
                 'min_length': 8,
                 'max_length': 20,
@@ -249,47 +249,27 @@ class PasswordSerializer(serializers.ModelSerializer):
             },
         }
 
-    # 判断原始密码和新的两个密码是否正确
+    # 判断新的两个密码是否正确
     def validate(self, data):
         # 判断两次密码
         if data['password'] != data['password2']:
             raise serializers.ValidationError('两次密码不一致')
-
-        # 判断短信验证码
-        # redis_conn = get_redis_connection('verify_codes')
-        # mobile = data['mobile']
-        # real_sms_code = redis_conn.get('sms_%s' % mobile)
-        # if real_sms_code is None:
-        #     raise serializers.ValidationError('无效的短信验证码')
-        # if data['sms_code'] != real_sms_code.decode():
-        #     raise serializers.ValidationError('短信验证码错误')
-
         return data
 
     def update(self, instance, validated_data):
         """
-        创建用户
+        更新用户密码
         """
         # 移除数据库模型类中不存在的属性
         del validated_data['password2']
-        del validated_data['sms_code']
-        del validated_data['allow']
+        ipassword = validated_data['ipassword']
+        del validated_data['ipassword']
 
-        # user= User.objects.create(**validated_data)
         user = super().create(validated_data)
 
-        # 调用django的认证系统加密密码
+        user.check_password(ipassword)
+
         user.set_password(validated_data['password'])
         user.save()
-
-        email = validated_data["email"]
-        instance.email = email
-        instance.save()
-
-        # 　生成验证了链接
-        verify_url = instance.generate_verify_email_url()
-
-        # 发送验证邮件
-        send_verify_email.delay(email, verify_url)
 
         return instance

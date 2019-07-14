@@ -43,15 +43,6 @@ var vm = new Vue({
             localStorage.clear();
             location.href = '/login.html';
         },
-        // 检查原始密码
-        // check_ipwd: function (){
-        //     var len = this.ipassword.length;
-        //     if(len<8||len>20){
-        //         this.error_ipassword = true;
-        //     } else {
-        //         this.error_ipassword = false;
-        //     }
-        // },
         check_pwd: function (){
             var len = this.password.length;
             if(len<8||len>20){
@@ -74,10 +65,17 @@ var vm = new Vue({
             this.check_pwd();
             this.check_cpwd();
             if (this.error_password == false && this.error_check_password == false) {
-                axios.post(this.host+'/password/', {
+                axios.put(this.host+'/password/',
+                    // { user_id: this.user_id },
+                    {
+                        // 向后端传递JWT token的方法
+                        headers: {
+                            'Authorization': 'JWT ' + this.token
+                        },
                         ipassword: this.ipassword,
                         password: this.password,
                         password2: this.password2,
+                        user_id:this.user_id,
                     }, {
                         responseType: 'json',
                         withCredentials: true
