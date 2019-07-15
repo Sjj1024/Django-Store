@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front_end_pc/js/place_order.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/models.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end_pc/place_order.html" afterPath="$PROJECT_DIR$/front_end_pc/place_order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
@@ -74,14 +76,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/models.py">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+            <state relative-caret-position="266">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="place_order.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/place_order.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="114" column="30" lean-forward="false" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+              <folding>
+                <element signature="e#1797#1803#0" expanded="true" />
+                <element signature="e#1803#1809#0" expanded="true" />
+                <element signature="e#1809#1815#0" expanded="true" />
+                <element signature="e#1815#1821#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="place_order.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,8 +131,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -134,10 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tb_store/tb_store/apps/contents/models.py" />
-        <option value="$PROJECT_DIR$/tb_store/tb_store/utils/fastdfs/fdfs_storage.py" />
-        <option value="$PROJECT_DIR$/spider_test.py" />
-        <option value="$PROJECT_DIR$/tb_store/tb_store/apps/contents/admin.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/crons.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/templates/index.html" />
         <option value="$PROJECT_DIR$/front_end_pc/js/index.js" />
@@ -185,6 +220,10 @@
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/orders/models.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
+        <option value="$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py" />
+        <option value="$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py" />
+        <option value="$PROJECT_DIR$/front_end_pc/place_order.html" />
+        <option value="$PROJECT_DIR$/front_end_pc/js/place_order.js" />
       </list>
     </option>
   </component>
@@ -236,35 +275,18 @@
             <path>
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
               <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -429,13 +451,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561891348383</updated>
-    </task>
-    <task id="LOCAL-00003" summary="优化项目目录结构">
-      <created>1561892588766</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1561892588766</updated>
     </task>
     <task id="LOCAL-00004" summary="优化项目目录结构">
       <created>1561892710095</created>
@@ -773,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563195080797</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="创建订单数据模型类">
+      <created>1563196186677</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1563196186677</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -786,7 +808,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="24" width="1315" height="780" extended-state="6" />
+    <frame x="53" y="24" width="1309" height="571" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -794,8 +816,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286004" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2879257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41640866" sideWeight="0.49095201" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1447679" sideWeight="0.4915254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41640866" sideWeight="0.49095201" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14545454" sideWeight="0.4915254" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44846576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -870,7 +892,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update README" />
     <MESSAGE value="ｑｑ登录后和原有账户绑定的实现" />
     <MESSAGE value="添加个人中心页面邮箱设置" />
     <MESSAGE value="成功发送验证邮件链接" />
@@ -895,7 +916,8 @@
     <MESSAGE value="创建购物车合并的类" />
     <MESSAGE value="完成购物车合并功能" />
     <MESSAGE value="创建购物车订单子应用" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建购物车订单子应用" />
+    <MESSAGE value="创建订单数据模型类" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建订单数据模型类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,41 +926,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front_end_pc/js/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="172" column="3" lean-forward="false" selection-start-line="172" selection-start-column="3" selection-end-line="172" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/django_store/lib/python3.5/site-packages/rest_framework/filters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/497c6174/9ce17ffe-4394-47ec-83bd-20484751da9e/tb_store.tb_sku_image">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/pagination.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/verifications/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1066">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/areas/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
@@ -1295,6 +1282,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.5/_pydecimal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="554" column="6" lean-forward="false" selection-start-line="554" selection-start-column="6" selection-end-line="554" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/place_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="114" column="30" lean-forward="false" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+          <folding>
+            <element signature="e#1797#1803#0" expanded="true" />
+            <element signature="e#1803#1809#0" expanded="true" />
+            <element signature="e#1809#1815#0" expanded="true" />
+            <element signature="e#1815#1821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
           <folding />
         </state>
       </provider>
