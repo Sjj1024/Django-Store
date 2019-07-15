@@ -210,7 +210,7 @@ class UserBrowsingHistoryView(CreateAPIView):
         s = SKUSerializer(skus, many=True)
         return Response(s.data)
 
-
+# 修改密码方式一
 class PassWord(APIView):
     """
     修改用户密码视图，请求接收：POST，ipassword，password，password2，
@@ -241,20 +241,17 @@ class PassWord(APIView):
         # 返回数据
         return Response(status=status.HTTP_202_ACCEPTED)
 
+# 修改密码方式二
+# class PassWord2(UpdateAPIView):
+#     """
+#     修改密码方式二
+#     """
+#     permission_classes = [IsAuthenticated]
+#     serializer_class = serializers.UserDetailSerializer
+#
+#     def get_object(self, *args, **kwargs):
+#         return self.request.user
+#
+#     def put(self, request, *args, **kwargs):
+#
 
-        # print(user)  # python
-        # user = request.user
-        # print(user)
-
-        # user.set_password(request.data["password"])
-        # permission_classes = [IsAuthenticated]
-        # serializer_class = serializers.PasswordSerializer
-        #
-        # def get_object(self, *args, **kwargs):
-        #     return self.request.user
-
-        # def post(self, request):
-        #     print(request.data["ipassword"])
-        #     print(request.data["password"])
-        #     print(request.data["password2"])
-        #     return Response("ok")

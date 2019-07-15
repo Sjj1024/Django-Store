@@ -81,9 +81,9 @@ var vm = new Vue({
                         withCredentials: true
                     })
                     .then(response => {
-                        // 弹出修改成功，跳转到个人中心页面
+                        // 弹出修改成功，跳转到登录页面
                         alert("修改成功!");
-                        return_url = '/index.html';
+                        return_url = '/login.html';
                         location.href = return_url;
                     })
                     .catch(error => {
