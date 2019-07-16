@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'haystack',
     'carts.apps.CartsConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
