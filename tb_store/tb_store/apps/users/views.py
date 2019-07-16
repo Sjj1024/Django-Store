@@ -212,6 +212,7 @@ class UserBrowsingHistoryView(CreateAPIView):
         s = SKUSerializer(skus, many=True)
         return Response(s.data)
 
+
 # 修改密码方式一
 class PassWord(APIView):
     """
@@ -243,24 +244,43 @@ class PassWord(APIView):
         # 返回数据
         return Response(status=status.HTTP_202_ACCEPTED)
 
+
 # 修改密码方式二
-# class PassWord2(UpdateAPIView):
-#     """
-#     修改密码方式二
-#     """
-#     permission_classes = [IsAuthenticated]
-#     serializer_class = serializers.UserDetailSerializer
-#
-#     def get_object(self, *args, **kwargs):
-#         return self.request.user
-#
-#     def put(self, request, *args, **kwargs):
-#
+class PassWord2(APIView):
+    """
+    修改密码方式二
+    """
+    permission_classes = [IsAuthenticated]
+
+    def put(self, request, *args, **kwargs):
+        # 获取参数
+        ipassword = request.data["ipassword"]
+        password = request.data["password"]
+        password2 = request.data["password2"]
+        # 获得请求用户
+        user = request.user
+        print(user)
+        # 效验新密码是否符合要求
+        if password != password2:
+            raise Exception("两次密码输入不一致！")
+        if len(password) > 20 or len(password) < 8:
+            raise Exception("密码长度需要8到20位")
+        # 检查原始密码是否正确
+        user.check_password(ipassword)
+
+        # 修改密码为新密码
+        user.set_password(password)
+        user.save()
+
+        # 返回数据
+        return Response(status=status.HTTP_202_ACCEPTED)
+
 
 class UserAuthorizeView(ObtainJSONWebToken):
     """
     用户认证
     """
+
     def post(self, request, *args, **kwargs):
         # 调用父类的方法，获取drf jwt扩展默认的认证用户处理结果
         response = super().post(request, *args, **kwargs)

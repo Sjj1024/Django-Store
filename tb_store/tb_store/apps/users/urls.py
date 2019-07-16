@@ -13,7 +13,7 @@ urlpatterns = [
     url(r"^email/$", views.EmailView.as_view()),
     url(r'^emails/verification/$', views.VerifyEmailView.as_view()),
     url(r'^browse_histories/$', views.UserBrowsingHistoryView.as_view()),
-    url(r'^password/$', views.PassWord.as_view()),
+    url(r'^password/$', views.PassWord2.as_view()),
     url(r'^authorizations/$', views.UserAuthorizeView.as_view()),
 ]
 router = routers.DefaultRouter()
