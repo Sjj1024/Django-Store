@@ -74,7 +74,27 @@ var vm = new Vue({
         },
         // 提交订单
         on_order_submit: function(){
-
+            if (this.order_submitting == false){
+                this.order_submitting = true;
+                axios.post(this.host+'/orders/', {
+                        address: this.nowsite,
+                        pay_method: this.pay_method
+                    }, {
+                        headers: {
+                            'Authorization': 'JWT ' + this.token
+                        },
+                        responseType: 'json'
+                    })
+                    .then(response => {
+                        location.href = '/order_success.html?order_id='+response.data.order_id
+                            +'&amount='+this.payment_amount
+                            +'&pay='+this.pay_method;
+                    })
+                    .catch(error => {
+                        this.order_submitting = false;
+                        alert(error.response.data[0]);
+                    })
+            }
         }
     }
 });

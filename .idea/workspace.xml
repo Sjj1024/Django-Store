@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front_end_pc/js/order_success.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/templates/detail.html" afterPath="$PROJECT_DIR$/tb_store/tb_store/templates/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end_pc/js/place_order.js" afterPath="$PROJECT_DIR$/front_end_pc/js/place_order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end_pc/order_success.html" afterPath="$PROJECT_DIR$/front_end_pc/order_success.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -83,6 +83,31 @@
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_success.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/order_success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+              <folding>
+                <element signature="e#1812#1818#0" expanded="true" />
+                <element signature="e#1818#1824#0" expanded="true" />
+                <element signature="e#1824#1830#0" expanded="true" />
+                <element signature="e#1830#1836#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_success.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/js/order_success.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="50" column="3" lean-forward="false" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,8 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tb_store/tb_store/templates/index.html" />
-        <option value="$PROJECT_DIR$/front_end_pc/js/index.js" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/contents/crons.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/models.py" />
         <option value="$PROJECT_DIR$/tb_store/scripts/regenerate_index_html.py" />
@@ -180,12 +203,14 @@
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/orders/models.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
         <option value="$PROJECT_DIR$/front_end_pc/place_order.html" />
-        <option value="$PROJECT_DIR$/front_end_pc/js/place_order.js" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/orders/views.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/templates/detail.html" />
         <option value="$PROJECT_DIR$/front_end_pc/goods/1.html" />
         <option value="$PROJECT_DIR$/front_end_pc/index.html" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py" />
+        <option value="$PROJECT_DIR$/front_end_pc/js/place_order.js" />
+        <option value="$PROJECT_DIR$/front_end_pc/order_success.html" />
+        <option value="$PROJECT_DIR$/front_end_pc/js/order_success.js" />
       </list>
     </option>
   </component>
@@ -238,27 +263,13 @@
             <path>
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-Store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-Store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="tb_store" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,13 +433,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561891348383</updated>
-    </task>
-    <task id="LOCAL-00005" summary="优化项目目录结构">
-      <created>1561892800358</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1561892800358</updated>
     </task>
     <task id="LOCAL-00006" summary="测试">
       <created>1561893094716</created>
@@ -766,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563196521723</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="添加下单逻辑">
+      <created>1563265981711</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1563265981712</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -863,7 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加个人中心页面邮箱设置" />
     <MESSAGE value="成功发送验证邮件链接" />
     <MESSAGE value="创建areas子应用用来处理收货地址逻辑" />
     <MESSAGE value="创建地区数据库模型并导入全国地区数据" />
@@ -888,7 +898,8 @@
     <MESSAGE value="创建购物车订单子应用" />
     <MESSAGE value="创建订单数据模型类" />
     <MESSAGE value="修改订单前段页面内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改订单前段页面内容" />
+    <MESSAGE value="添加下单逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加下单逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,20 +908,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front_end_pc/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="88" column="48" lean-forward="false" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/goods/search_indexes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/templates/search/indexes/goods/sku_text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1079,6 +1076,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,13 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/goods/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1202,6 +1193,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="114" column="30" lean-forward="false" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,6 +1256,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/place_order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="74" column="15" lean-forward="true" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/apps/orders/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1271,6 +1271,27 @@
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/order_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+          <folding>
+            <element signature="e#1812#1818#0" expanded="true" />
+            <element signature="e#1818#1824#0" expanded="true" />
+            <element signature="e#1824#1830#0" expanded="true" />
+            <element signature="e#1830#1836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/js/order_success.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="50" column="3" lean-forward="false" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
