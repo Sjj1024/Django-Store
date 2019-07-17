@@ -65,7 +65,8 @@ var vm = new Vue({
             this.check_pwd();
             this.check_cpwd();
             if (this.error_password == false && this.error_check_password == false) {
-                axios.put(this.host+'/password/', {
+                axios.put(this.host+'/password/',
+                    {
                         // 向后端传递JWT token的方法
                         headers: {
                             'Authorization': 'JWT ' + this.token
@@ -74,7 +75,6 @@ var vm = new Vue({
                         password: this.password,
                         password2: this.password2,
                         user_id:this.user_id,
-                    }, {
                         responseType: 'json',
                         withCredentials: true
                     })

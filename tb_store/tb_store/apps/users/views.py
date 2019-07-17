@@ -257,14 +257,17 @@ class PassWord2(APIView):
         ipassword = request.data["ipassword"]
         password = request.data["password"]
         password2 = request.data["password2"]
+
         # 获得请求用户
         user = request.user
         print(user)
+
         # 效验新密码是否符合要求
         if password != password2:
             raise Exception("两次密码输入不一致！")
         if len(password) > 20 or len(password) < 8:
             raise Exception("密码长度需要8到20位")
+
         # 检查原始密码是否正确
         user.check_password(ipassword)
 
