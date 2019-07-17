@@ -1,9 +1,12 @@
+import os
+from alipay import AliPay
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from orders.models import OrderInfo
+from tb_store.settings import dev
 
 
 class PaymentView(APIView):
@@ -26,12 +29,13 @@ class PaymentView(APIView):
 
         # 构造支付宝支付链接地址
         alipay = AliPay(
-            appid=settings.ALIPAY_APPID,
+            appid=dev.ALIPAY_APPID,
             app_notify_url=None,  # 默认回调url
             app_private_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "keys/app_private_key.pem"),
-            alipay_public_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "keys/alipay_public_key.pem"),  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
+            alipay_public_key_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                "keys/alipay_public_key.pem"),  # 支付宝的公钥，验证支付宝回传消息使用，不是你自己的公钥,
             sign_type="RSA2",  # RSA 或者 RSA2
-            debug=settings.ALIPAY_DEBUG  # 默认False
+            debug=dev.ALIPAY_DEBUG  # 默认False
         )
 
         order_string = alipay.api_alipay_trade_page_pay(
@@ -42,5 +46,5 @@ class PaymentView(APIView):
         )
         # 需要跳转到https://openapi.alipay.com/gateway.do? + order_string
         # 拼接链接返回前端
-        alipay_url = settings.ALIPAY_URL + "?" + order_string
+        alipay_url = dev.ALIPAY_URL + "?" + order_string
         return Response({'alipay_url': alipay_url})
