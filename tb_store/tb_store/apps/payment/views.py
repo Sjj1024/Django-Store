@@ -41,7 +41,7 @@ class PaymentView(APIView):
         order_string = alipay.api_alipay_trade_page_pay(
             out_trade_no=order_id,
             total_amount=str(order.total_amount),
-            subject="美多商城%s" % order_id,
+            subject="东京商城%s" % order_id,
             return_url="http://www.meiduo.site:8080/pay_success.html",
         )
         # 需要跳转到https://openapi.alipay.com/gateway.do? + order_string
