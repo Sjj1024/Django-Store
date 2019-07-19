@@ -4,13 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/tb_store/tb_store/apps/carts/utils.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/adminx.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tb_store/tb_store/utils/db_router.py" />
+    <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="配置mysql主从服务">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/apps.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_router.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db_router.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/db_router.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -84,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+            <state relative-caret-position="242">
+              <caret line="344" column="33" lean-forward="true" selection-start-line="344" selection-start-column="33" selection-end-line="344" selection-end-column="33" />
               <folding>
                 <element signature="e#4525#4723#0" expanded="false" />
               </folding>
@@ -194,8 +189,8 @@
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/adminx.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/apps/goods/urls.py" />
-        <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
         <option value="$PROJECT_DIR$/tb_store/tb_store/utils/db_router.py" />
+        <option value="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
       </list>
     </option>
   </component>
@@ -425,13 +420,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561891348383</updated>
-    </task>
-    <task id="LOCAL-00018" summary="增加短信验证码借口">
-      <created>1562029627171</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1562029627171</updated>
     </task>
     <task id="LOCAL-00019" summary="成功发送短信验证码">
       <created>1562035614165</created>
@@ -769,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563450929065</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="配置mysql主从服务">
+      <created>1563503678499</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1563503678500</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView">
@@ -782,12 +777,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="693" y="-4" width="626" height="611" extended-state="6" />
+    <frame x="693" y="-4" width="1311" height="627" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28865978" sideWeight="0.4915254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13259669" sideWeight="0.4915254" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7337461" sideWeight="0.509048" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7322515" sideWeight="0.509048" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44846576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286004" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -845,7 +840,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加用户修改密码功能" />
     <MESSAGE value="完成后端ES搜索引擎安装和搭建" />
     <MESSAGE value="添加前段搜索页面" />
     <MESSAGE value="添加购物车的子应用" />
@@ -870,7 +864,8 @@
     <MESSAGE value="创建支付成功后的回调接口" />
     <MESSAGE value="完成回调页面前端代码" />
     <MESSAGE value="配置xadmin后台站点管理工具" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置xadmin后台站点管理工具" />
+    <MESSAGE value="配置mysql主从服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置mysql主从服务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1233,16 +1228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-          <folding>
-            <element signature="e#4525#4723#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1258,6 +1243,16 @@
         <state relative-caret-position="190">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="344" column="33" lean-forward="true" selection-start-line="344" selection-start-column="33" selection-end-line="344" selection-end-column="33" />
+          <folding>
+            <element signature="e#4525#4723#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
