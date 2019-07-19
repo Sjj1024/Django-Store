@@ -104,7 +104,15 @@ DATABASES = {
         'USER': 'store',  # 数据库用户名
         'PASSWORD': 'store',  # 数据库用户密码
         'NAME': 'tb_store'  # 数据库名字
-    }
+    },
+    'slave': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',  # 数据库主机
+        'PORT': 8306,  # 数据库端口
+        'USER': 'store',  # 数据库用户名
+        'PASSWORD': 'store',  # 数据库用户密码
+        'NAME': 'tb_store'  # 数据库名字
+    },
 }
 
 # Password validation

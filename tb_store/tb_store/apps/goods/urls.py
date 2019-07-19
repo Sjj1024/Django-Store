@@ -5,7 +5,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^categories/(?P<category_id>\d+)/skus/$', views.SKUListView.as_view())
+    url(r'^categories/(?P<category_id>\d+)/skus/$', views.SKUListView.as_view()),
 ]
 
 router = DefaultRouter()
