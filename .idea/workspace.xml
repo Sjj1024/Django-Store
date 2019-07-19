@@ -4,9 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/tb_store/tb_store/apps/carts/utils.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="配置mysql主从服务">
+    <list default="true" id="9e6f804b-1e39-4384-9513-b2d865514392" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" afterPath="$PROJECT_DIR$/tb_store/tb_store/settings/dev.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,7 +59,7 @@
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="152">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#363#372#0" expanded="true" />
@@ -73,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/db_router.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,8 +81,8 @@
       <file leaf-file-name="dev.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="344" column="33" lean-forward="true" selection-start-line="344" selection-start-column="33" selection-end-line="344" selection-end-column="33" />
+            <state relative-caret-position="108">
+              <caret line="331" column="10" lean-forward="true" selection-start-line="331" selection-start-column="10" selection-end-line="331" selection-end-column="10" />
               <folding>
                 <element signature="e#4525#4723#0" expanded="false" />
               </folding>
@@ -421,13 +420,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561891348383</updated>
     </task>
-    <task id="LOCAL-00019" summary="成功发送短信验证码">
-      <created>1562035614165</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1562035614165</updated>
-    </task>
     <task id="LOCAL-00020" summary="使用celery队列完成短信验证码发送">
       <created>1562067473371</created>
       <option name="number" value="00020" />
@@ -764,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563503678500</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="配置mysql数据库读写分离">
+      <created>1563503807653</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1563503807653</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TodoView">
@@ -777,10 +776,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="693" y="-4" width="1311" height="627" extended-state="6" />
+    <frame x="693" y="-4" width="1309" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13259669" sideWeight="0.4915254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29328063" sideWeight="0.4915254" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7322515" sideWeight="0.509048" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44846576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -840,7 +839,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成后端ES搜索引擎安装和搭建" />
     <MESSAGE value="添加前段搜索页面" />
     <MESSAGE value="添加购物车的子应用" />
     <MESSAGE value="增加购物车功能" />
@@ -865,7 +863,8 @@
     <MESSAGE value="完成回调页面前端代码" />
     <MESSAGE value="配置xadmin后台站点管理工具" />
     <MESSAGE value="配置mysql主从服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置mysql主从服务" />
+    <MESSAGE value="配置mysql数据库读写分离" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置mysql数据库读写分离" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1030,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="102" column="15" lean-forward="true" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,9 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#642#683#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1196,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,9 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,9 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,13 +1212,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="152">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#363#372#0" expanded="true" />
@@ -1241,15 +1228,15 @@
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/utils/db_router.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tb_store/tb_store/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="344" column="33" lean-forward="true" selection-start-line="344" selection-start-column="33" selection-end-line="344" selection-end-column="33" />
+        <state relative-caret-position="108">
+          <caret line="331" column="10" lean-forward="true" selection-start-line="331" selection-start-column="10" selection-end-line="331" selection-end-column="10" />
           <folding>
             <element signature="e#4525#4723#0" expanded="false" />
           </folding>
