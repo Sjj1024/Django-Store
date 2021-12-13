@@ -30,7 +30,7 @@ idna==2.8
 itsdangerous==1.1.0
 jdcal==1.4.1
 kombu==4.6.3
-lxml==4.3.4
+lxml==4.6.5
 mutagen==1.42.0
 odfpy==1.4.0
 openpyxl==2.6.2
